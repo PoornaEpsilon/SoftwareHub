@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kanvinee\\OneDrive - Publicis Groupe\\Documents\\GitHub\\SoftwareHub\\SoftwareHub\\SoftwareHub\\SoftwareHub.csproj": {}
+    "C:\\Users\\poocm\\Documents\\GitHub\\SoftwareHub\\SoftwareHub\\SoftwareHub\\SoftwareHub\\SoftwareHub.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kanvinee\\OneDrive - Publicis Groupe\\Documents\\GitHub\\SoftwareHub\\SoftwareHub\\SoftwareHub\\SoftwareHub.csproj": {
+    "C:\\Users\\poocm\\Documents\\GitHub\\SoftwareHub\\SoftwareHub\\SoftwareHub\\SoftwareHub\\SoftwareHub.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kanvinee\\OneDrive - Publicis Groupe\\Documents\\GitHub\\SoftwareHub\\SoftwareHub\\SoftwareHub\\SoftwareHub.csproj",
+        "projectUniqueName": "C:\\Users\\poocm\\Documents\\GitHub\\SoftwareHub\\SoftwareHub\\SoftwareHub\\SoftwareHub\\SoftwareHub.csproj",
         "projectName": "SoftwareHub",
-        "projectPath": "C:\\Users\\kanvinee\\OneDrive - Publicis Groupe\\Documents\\GitHub\\SoftwareHub\\SoftwareHub\\SoftwareHub\\SoftwareHub.csproj",
-        "packagesPath": "C:\\Users\\kanvinee\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kanvinee\\OneDrive - Publicis Groupe\\Documents\\GitHub\\SoftwareHub\\SoftwareHub\\SoftwareHub\\obj\\",
+        "projectPath": "C:\\Users\\poocm\\Documents\\GitHub\\SoftwareHub\\SoftwareHub\\SoftwareHub\\SoftwareHub\\SoftwareHub.csproj",
+        "packagesPath": "C:\\Users\\poocm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\poocm\\Documents\\GitHub\\SoftwareHub\\SoftwareHub\\SoftwareHub\\SoftwareHub\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\kanvinee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\poocm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
