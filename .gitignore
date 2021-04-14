@@ -4,3 +4,12 @@ project.nuget.cache
 project.assets.json
 SoftwareHub.csprojAssemblyReference.cache
 .suo
+*.v2
+SoftwareHub/.vs/SoftwareHub/v16/.suo
+SoftwareHub/.vs/SoftwareHub/v16/.suo
+*.cache
+SoftwareHub/SoftwareHub/SoftwareHub.csproj.user
+SoftwareHub/SoftwareHub/obj/Debug/netcoreapp3.1/SoftwareHub.csprojAssemblyReference.cache
+SoftwareHub/.vs/SoftwareHub/v16/.suo
+SoftwareHub/.vs/SoftwareHub/v16/.suo
+SoftwareHub/SoftwareHub/obj/Debug/netcoreapp3.1/SoftwareHub.csprojAssemblyReference.cache
