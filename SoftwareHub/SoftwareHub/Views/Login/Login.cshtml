@@ -1,0 +1,162 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+
+*@
+@{
+    Layout = null;
+}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Software Hub</title>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- Slick -->
+    <link type="text/css" rel="stylesheet" href="css/slick.css" />
+    <link type="text/css" rel="stylesheet" href="css/slick-theme.css" />
+
+    <!-- nouislider -->
+    <link type="text/css" rel="stylesheet" href="css/nouislider.min.css" />
+
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Custom stlylesheet -->
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: url(../../wwwroot/img/background-image.jpg);
+            background-repeat: no-repeat;
+        }
+
+        form {
+            border: 3px solid #f1f1f1;
+        }
+
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: steelblue;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+            button:hover {
+                opacity: 0.8;
+                background-color: blue;
+            }
+
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+        }
+
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0px 12px 0px;
+        }
+
+        img.avatar {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        .loginclass {
+            background-color: azure;
+            width: 400px;
+            border: 3px solid black;
+            padding: 20px;
+            margin: 0px 400px;
+            border-radius: 10px;
+        }
+
+
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+
+        /* Change styles for span and cancel button on extra small screens */
+    </style>
+</head>
+<body>
+    <div id="header">
+        <!-- container -->
+        <div class="container" style="background-color:black;border-bottom:5px solid red">
+            <!-- row -->
+            <div class="row">
+                <!-- LOGO -->
+                <div class="col-md-3">
+                    <div class="header-logo">
+                        <a href="#" class="logo">
+                            <img style="height:50px;width:150px;margin-top:15px" src="~/img/logo.png" alt="logo" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <!-- container -->
+        <div class="imgcontainer" style="float:inline-start">
+            <img src="/img/avatar.png" alt="Avatar" class="avatar">
+        </div>
+        <div class="loginclass">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            <div>
+                <button type="button" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/jquery.zoom.min.js"></script>
+    <script src="js/main.js"></script>
+</body>

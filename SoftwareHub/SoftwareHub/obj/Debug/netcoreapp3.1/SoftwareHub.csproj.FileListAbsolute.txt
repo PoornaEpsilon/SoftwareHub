@@ -35,3 +35,43 @@ C:\Users\poocm\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\SoftwareHub\
 C:\Users\poocm\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\SoftwareHub.pdb
 C:\Users\poocm\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\SoftwareHub.genruntimeconfig.cache
 C:\Users\poocm\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\SoftwareHub.csproj.CopyComplete
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\bin\Debug\netcoreapp3.1\SoftwareHub.exe
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\bin\Debug\netcoreapp3.1\SoftwareHub.deps.json
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\bin\Debug\netcoreapp3.1\SoftwareHub.runtimeconfig.json
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\bin\Debug\netcoreapp3.1\SoftwareHub.runtimeconfig.dev.json
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\bin\Debug\netcoreapp3.1\SoftwareHub.dll
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\bin\Debug\netcoreapp3.1\SoftwareHub.pdb
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\bin\Debug\netcoreapp3.1\SoftwareHub.Views.dll
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\bin\Debug\netcoreapp3.1\SoftwareHub.Views.pdb
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\SoftwareHub.csprojAssemblyReference.cache
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\SoftwareHub.AssemblyInfoInputs.cache
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\SoftwareHub.AssemblyInfo.cs
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\SoftwareHub.csproj.CoreCompileInputs.cache
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\SoftwareHub.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\SoftwareHub.RazorAssemblyInfo.cache
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\SoftwareHub.RazorAssemblyInfo.cs
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\staticwebassets\SoftwareHub.StaticWebAssets.Manifest.cache
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\staticwebassets\SoftwareHub.StaticWebAssets.xml
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\scopedcss\bundle\SoftwareHub.styles.css
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\SoftwareHub.TagHelpers.input.cache
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\SoftwareHub.TagHelpers.output.cache
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\SoftwareHub.RazorCoreGenerate.cache
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\SoftwareHub.RazorTargetAssemblyInfo.cache
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\SoftwareHub.RazorTargetAssemblyInfo.cs
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\SoftwareHub.Views.pdb
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\SoftwareHub.dll
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\SoftwareHub.pdb
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\SoftwareHub.genruntimeconfig.cache
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\SoftwareHub.csproj.CopyComplete
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\Razor\Views\Login\Login.cshtml.g.cs
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\Razor\Views\Login\Signup.cshtml.g.cs
+C:\Users\kanvinee\OneDrive - Publicis Groupe\Documents\GitHub\SoftwareHub\SoftwareHub\SoftwareHub\obj\Debug\netcoreapp3.1\Razor\Views\Admin\AdminLogin.cshtml.g.cs
