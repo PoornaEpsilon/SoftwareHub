@@ -1,9 +1,10 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
+@model SoftwareHub.Models.newUserClass;
 @{
     ViewData["Title"] = "SoftwareHub";
-    Layout = null;
+     Layout = "~/Views/Shared/_UserLogin.cshtml"; ;
 }
 <head>
     <meta charset="utf-8">
@@ -52,7 +53,7 @@
             width: 400px;
             border: 5px solid black;
             padding: 20px;
-            margin: 0px 400px;
+            margin: 0px 430px;
         }
 
         input[type=text], input[type=password], input[type=email], input[type=tel] {
@@ -66,7 +67,7 @@
 
         .imgcontainer {
             text-align: center;
-            margin: 24px 0px 12px 0px;
+            
         }
 
         img.avatar {
@@ -94,57 +95,80 @@
     </style>
 </head>
 <body>
-    <div id="header">
-        <!-- container -->
-        <div class="container" style="background-color:black;border-bottom:5px solid red">
-            <!-- row -->
-            <div class="row">
-                <!-- LOGO -->
-                <div class="col-md-3">
-                    <div class="header-logo">
-                        <a href="#" class="logo">
-                            <img style="height:50px;width:150px;margin-top:15px;margin-bottom:15px;margin-left:15px" src="~/img/logo.png" alt="logo" />
-                        </a>
-                    </div>
-                </div>
+
+    <form asp-action="Signup">
+        <div class="section">
+            <!-- container -->
+            <div class="imgcontainer" style="float:inline-start">
+                <img src="/img/avatar.png" alt="Avatar" class="avatar">
             </div>
+
+            <div class="loginclass">
+
+                <div class="form-group">
+                    <label asp-for="username" class="control-label"></label>
+                    <input asp-for="username" class="form-control" />
+                    <span asp-validation-for="username" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="password" class="control-label"></label>
+                    <input asp-for="password" class="form-control" />
+                    <span asp-validation-for="password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="confirmpassword" class="control-label"></label>
+                    <input asp-for="confirmpassword" class="form-control" />
+                    <span asp-validation-for="confirmpassword" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="organisation" class="control-label"></label>
+                    <input asp-for="organisation" class="form-control" />
+                    <span asp-validation-for="organisation" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="userEmail" class="control-label"></label>
+                    <input asp-for="userEmail" class="form-control" />
+                    <span asp-validation-for="userEmail" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="orgEmail" class="control-label"></label>
+                    <input asp-for="orgEmail" class="form-control" />
+                    <span asp-validation-for="orgEmail" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="userPhone" class="control-label"></label>
+                    <input asp-for="userPhone" class="form-control" />
+                    <span asp-validation-for="userPhone" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="orgPhone" class="control-label"></label>
+                    <input asp-for="orgPhone" class="form-control" />
+                    <span asp-validation-for="orgPhone" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="designation" class="control-label"></label>
+                    <input asp-for="designation" class="form-control" />
+                    <span asp-validation-for="designation" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="orgAddress" class="control-label"></label>
+                    <input asp-for="orgAddress" class="form-control" />
+                    <span asp-validation-for="orgAddress" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" value="Signup">Signup</button>
+                </div>
+
+            </div>
+
+            <!-- /container -->
         </div>
-    </div>
-    <div class="section">
-        <!-- container -->
-        <div class="imgcontainer" style="float:inline-start">
-            <img src="/img/avatar.png" alt="Avatar" class="avatar">
-        </div>
-
-        <div class="loginclass">
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
-
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-
-            <label for="psw"><b>Re-Enter Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-
-            <label for="mail"><b>Email</b></label>
-            <input type="email" placeholder="Enter email" name="mail" required>
-
-
-            <label for="pnumber"><b>Phone</b></label>
-            <input type="tel" placeholder="Enter PhoneNumber" name="pnumber" required>
-
-            <label for="company"><b>Company</b></label>
-            <input type="text" placeholder="Enter Company name" name="company" required>
-
-            <button type="submit">Signup</button>
-        </div>
-
-        <!-- /container -->
-    </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/nouislider.min.js"></script>
-    <script src="js/jquery.zoom.min.js"></script>
-    <script src="js/main.js"></script>
+    </form>
+    <!-- jQuery Plugins -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/slick.min.js"></script>
+    <script src="/js/nouislider.min.js"></script>
+    <script src="/js/jquery.zoom.min.js"></script>
+    <script src="/js/main.js"></script>
 </body>
