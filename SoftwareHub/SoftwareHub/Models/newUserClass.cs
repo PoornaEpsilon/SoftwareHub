@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SoftwareHub.Models
 {
-    public class newUserClass
+    public class NewUserClass
     {
 
        [Key]

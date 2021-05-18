@@ -24,7 +24,7 @@ namespace SoftwareHub.Controllers
 
 
         [HttpPost]
-        public IActionResult Login([Bind] newUserClass nu)
+        public IActionResult Login([Bind] NewUserClass nu)
         {
             int res =dbop.LoginCheck(nu);
             if(res==1)
