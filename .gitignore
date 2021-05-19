@@ -40,3 +40,9 @@ SoftwareHub/.vs/SoftwareHub/v16/.suo
 *.dll
 *.pdb
 *.xml
+*.config
+*.v2
+SoftwareHub/.vs/SoftwareHub/v16/.suo
+*.json
+*.exe
+*.cache

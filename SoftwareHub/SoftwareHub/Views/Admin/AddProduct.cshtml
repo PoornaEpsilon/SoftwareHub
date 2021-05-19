@@ -1,0 +1,71 @@
+﻿@model SoftwareHub.Models.Product
+
+@{
+    ViewData["Title"] = "AddProduct";
+}
+
+<h2>Add Product</h2>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddProduct">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ProductName" class="control-label"></label>
+                <input asp-for="ProductName" class="form-control" />
+                <span asp-validation-for="ProductName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BasicPrice" class="control-label"></label>
+                <input asp-for="BasicPrice" class="form-control" />
+                <span asp-validation-for="BasicPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StandardPrice" class="control-label"></label>
+                <input asp-for="StandardPrice" class="form-control" />
+                <span asp-validation-for="StandardPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EnterprisePrice" class="control-label"></label>
+                <input asp-for="EnterprisePrice" class="form-control" />
+                <span asp-validation-for="EnterprisePrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Category" class="control-label"></label>
+                <input asp-for="Category" class="form-control" />
+                <span asp-validation-for="Category" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PocName" class="control-label"></label>
+                <input asp-for="PocName" class="form-control" />
+                <span asp-validation-for="PocName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PocEmail" class="control-label"></label>
+                <input asp-for="PocEmail" class="form-control" />
+                <span asp-validation-for="PocEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PocPhone" class="control-label"></label>
+                <input asp-for="PocPhone" class="form-control" />
+                <span asp-validation-for="PocPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Add Product" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="AdminHome">Back to Product List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

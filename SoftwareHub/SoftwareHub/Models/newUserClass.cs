@@ -28,11 +28,11 @@ namespace SoftwareHub.Models
         [NotMapped]
         [Compare("password")]
         [DataType(DataType.Password)]
-        public string confirmpassword { get; set; }
+        public string Confirmpassword { get; set; }
 
         [Required(ErrorMessage = "Enter Organisation Name")]
         [Display(Name = "Organisation Name")]
-        public string organisation { get; set; }
+        public string organization { get; set; }
 
         [Required(ErrorMessage = "Enter Personal Email")]
         [Display(Name = "Personal email")]

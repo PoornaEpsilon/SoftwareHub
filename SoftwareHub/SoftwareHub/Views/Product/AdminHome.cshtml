@@ -1,0 +1,83 @@
+﻿@model IEnumerable<SoftwareHub.Models.Product>
+
+@{
+    ViewData["Title"] = "AdminHome";
+}
+
+<h2>AdminHome</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BasicPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StandardPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EnterprisePrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PocName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PocEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PocPhone)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BasicPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StandardPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EnterprisePrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PocName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PocEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PocPhone)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ProductId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.ProductId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.ProductId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

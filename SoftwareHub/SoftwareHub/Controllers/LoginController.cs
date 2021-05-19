@@ -26,8 +26,8 @@ namespace SoftwareHub.Controllers
         [HttpPost]
         public IActionResult Login([Bind] NewUserClass nu)
         {
-            int res =dbop.LoginCheck(nu);
-            if(res==1)
+            int res = dbop.LoginCheck(nu);
+            if(res == 1)
             {
                 TempData["msg"] = "Credentials are Right";
             }
@@ -35,14 +35,16 @@ namespace SoftwareHub.Controllers
             {
                 TempData["msg"] = "Credentials are wrong";
             }
-            return View();
+            return View("Home");
         }
+
         public IActionResult Signup()
         {
             return View();
         }
+
         [HttpPost]
-        public async Task<IActionResult> Signup(newUserClass nu)
+        public async Task<IActionResult> Signup(NewUserClass nu)
         {
             if (ModelState.IsValid)
             {

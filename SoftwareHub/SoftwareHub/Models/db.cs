@@ -12,8 +12,8 @@ namespace SoftwareHub.Models
 {
     public class db
     {
-        SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=SoftwareHub;Integrated Security=True");
-        public int LoginCheck(newUserClass nu)
+        SqlConnection con = new SqlConnection("Data Source=localhost\\SQLEXPRESS;Initial Catalog=epsilondb;Integrated Security=True");
+        public int LoginCheck(NewUserClass nu)
         {
             SqlCommand com = new SqlCommand("Sh_Login", con);
             com.CommandType = CommandType.StoredProcedure;

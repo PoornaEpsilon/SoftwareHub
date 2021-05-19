@@ -1,7 +1,7 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
-@model SoftwareHub.Models.newUserClass;
+@model SoftwareHub.Models.NewUserClass;
 @{
     ViewData["Title"] = "SoftwareHub";
      Layout = "~/Views/Shared/_UserLogin.cshtml"; ;
@@ -116,14 +116,14 @@
                     <span asp-validation-for="password" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="confirmpassword" class="control-label"></label>
-                    <input asp-for="confirmpassword" class="form-control" />
-                    <span asp-validation-for="confirmpassword" class="text-danger"></span>
+                    <label asp-for="Confirmpassword" class="control-label"></label>
+                    <input asp-for="Confirmpassword" class="form-control" />
+                    <span asp-validation-for="Confirmpassword" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="organisation" class="control-label"></label>
-                    <input asp-for="organisation" class="form-control" />
-                    <span asp-validation-for="organisation" class="text-danger"></span>
+                    <label asp-for="organization" class="control-label"></label>
+                    <input asp-for="organization" class="form-control" />
+                    <span asp-validation-for="organization" class="text-danger"></span>
                 </div>
                 <div class="form-group">
                     <label asp-for="userEmail" class="control-label"></label>
