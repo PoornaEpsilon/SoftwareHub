@@ -890,7 +890,6 @@ textarea.input {
   background-color: #FFF;
   border-color: #D10024;
   color: #D10024;
-  height: 30px;
 }
 
 .product .product-img .product-label>span.new {
@@ -905,7 +904,6 @@ textarea.input {
   background-color: #FFF;
   text-align: center;
   z-index: 20;
-  height: 20px;
 }
 
 .product .product-body .product-category {
