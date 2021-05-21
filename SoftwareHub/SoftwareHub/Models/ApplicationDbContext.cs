@@ -16,5 +16,6 @@ namespace SoftwareHub.Models
         public DbSet<NewUserClass> register { get; set; }
         public DbSet<Product> product { get; set; }
         public DbSet<Cart> cart { get; set; }
+        public DbSet<AdminLogin> login { get; set; }
     }
 }

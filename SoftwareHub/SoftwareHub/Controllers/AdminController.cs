@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using SoftwareHub.Models;
+using Microsoft.AspNetCore.Http;
 
 namespace SoftwareHub.Controllers
 {
@@ -21,16 +22,26 @@ namespace SoftwareHub.Controllers
             return View();
         }
 
-        public IActionResult Admin_Login()
+        [HttpPost]
+        public IActionResult AdminHome(IFormCollection formData)
         {
-            var productData = _db.product.ToList();
-            return View("AdminHome",productData);
-        }
+            var loginData = _db.login.ToList();
 
-        public IActionResult AdminHome()
-        {
-            var productData = _db.product.ToList();
-            return View(productData);
+            for(int i =0; i < loginData.Count; i++)
+            {
+                if(loginData[i].Username.Equals(formData["username"]) && loginData[i].Password.Equals(formData["password"])){
+
+                    ViewBag.TestData = formData["test"];
+                    var productData = _db.product.ToList();
+                    return View("AdminHome", productData);
+                }
+                else
+                {
+                    return RedirectToAction("AdminLogin");
+                }
+            }
+
+            return View("AdminHome");
         }
 
         public IActionResult AddProduct()
