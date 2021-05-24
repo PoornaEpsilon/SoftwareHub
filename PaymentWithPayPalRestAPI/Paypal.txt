@@ -1,0 +1,26 @@
+
+Dveloper-Login:
+
+username:mejoxey107@64ge.com
+password:softwarehub@7
+
+Sandbox-login:
+sb-jspwh6274722@personal.example.com
+W)hx,H4R
+
+
+https://localhost:44395/cart/success?paymentId=PAYID-MCULGVY0K243384U0399180G&token=EC-0SW11478DN028113E&PayerID=73LY6JMKVM4UY
+
+instructions:
+=>In this demo project ,at first he created cart controller and their views respectively
+
+=>He created a developer paypal account and after that he created a app in the option.After creating the app he will get clientId and secret credentials 
+which are used in application.json file
+
+=>All restApi required for payPal integration are stored payPalhelper app,according to required fields we can edit that
+
+=>For logging in payPal after integration please use the above sandbox-login credentials.
+
+=>For more clarity please refer the following Youtube video:
+
+https://www.youtube.com/watch?v=L9hMRkkkj-Y&ab_channel=LearningProgramming
