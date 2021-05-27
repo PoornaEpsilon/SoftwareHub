@@ -16,6 +16,25 @@ namespace SoftwareHub.Controllers
             _db = db;
         }
 
+        public IActionResult Product()
+        {
+
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddToCart(Cart cartItem)
+        {
+
+            if (ModelState.IsValid)
+            {
+                _db.Add(cartItem);
+                await _db.SaveChangesAsync();
+                return RedirectToAction("Product");
+            }
+            return View("Product");
+        }
+
         public IActionResult AdminHome()
         {
             var productData = _db.product.ToList();

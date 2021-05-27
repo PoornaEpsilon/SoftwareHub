@@ -4,6 +4,10 @@
     ViewData["Title"] = "Cart";
 }
 
+@{ 
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
 @{
     float sum = 0;
 }
@@ -49,7 +53,14 @@
         <tr>
             <td colspan="2" style="text-align:right">Total:</td>
             <td>@sum</td>
-            <td>@Html.ActionLink("CHECKOUT", "", new { @*id = item.ProductId*@}, new { @class = "btn btn-primary btn-sm" })</td>
+            <td>
+                <form method="post" asp-controller="cart" asp-action="Checkout">
+                    <input type="hidden" name="total" value="@sum" />
+
+                    <input type="submit" value="CHECKOUT" class="btn btn-primary btn-sm" />
+                </form>
+            </td>
+            @*<td>@Html.ActionLink("CHECKOUT", "Cart/Checkout", new { total = sum}, new { @class = "btn btn-primary btn-sm" })</td>*@
         </tr>
     </tbody>
 </table>

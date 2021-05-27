@@ -19,7 +19,16 @@ namespace SoftwareHub.Controllers
 
         public IActionResult AdminLogin()
         {
-            return View();
+            return View("AdminLogin");
+        }
+
+       
+        public IActionResult AdminView()
+        {
+            
+            var productData = _db.product.ToList();
+            return View(productData);
+               
         }
 
         [HttpPost]
@@ -27,10 +36,10 @@ namespace SoftwareHub.Controllers
         {
             var loginData = _db.login.ToList();
 
-            for(int i =0; i < loginData.Count; i++)
+            foreach (var item in loginData)
             {
-                if(loginData[i].Username.Equals(formData["username"]) && loginData[i].Password.Equals(formData["password"])){
-
+                if(item.Username.Equals(formData["username"]) && item.Password.Equals(formData["password"]))
+                {
                     ViewBag.TestData = formData["test"];
                     var productData = _db.product.ToList();
                     return View("AdminHome", productData);
@@ -56,7 +65,7 @@ namespace SoftwareHub.Controllers
             {
                 _db.Add(prod);
                 await _db.SaveChangesAsync();
-                return RedirectToAction("AdminHome");
+                return RedirectToAction("AdminView");
             }
             return View(prod);
         }
@@ -79,7 +88,7 @@ namespace SoftwareHub.Controllers
             {
                 _db.Update(ap);
                 await _db.SaveChangesAsync();
-                return RedirectToAction("AdminHome");
+                return RedirectToAction("AdminView");
             }
 
             return View(ap);
@@ -102,7 +111,7 @@ namespace SoftwareHub.Controllers
             var getProductDetails = await _db.product.FindAsync(id);
             _db.Remove(getProductDetails);
             await _db.SaveChangesAsync();
-            return RedirectToAction("AdminHome");
+            return RedirectToAction("AdminView");
         }
 
     }

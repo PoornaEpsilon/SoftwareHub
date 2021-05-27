@@ -1,0 +1,236 @@
+﻿@model IEnumerable<SoftwareHub.Models.Product>
+
+@{
+    ViewData["Title"] = "SoftwareHub";
+}
+
+@{ 
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<html>
+    <head>
+        <title> Software Hub </title>
+    </head>
+
+    <body onload="ready()">
+        <style>
+            html, body {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                font-family: 'Roboto', sans-serif;
+            }
+        </style>
+
+        <main class="container-prod">
+            
+                <style>
+                    .container-prod {
+                        max-width: 1200px;
+                        margin: 0 auto;
+                        padding: 5px;
+                        display: flex;
+                    }
+                </style>
+
+                <!-- Left Column  -->
+                <div class="left-column">
+                    <style>
+                        .left-column {
+                            width: 65%;
+                            position: relative;
+                            margin-top: 30px;
+                        }
+                    </style>
+
+                    <img class="active" src="https://th.bing.com/th/id/R40a32bc2171bb9e3fa93f037abd501b8?rik=tRXv57Ej%2bDbvgw&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f4%2fCoder-PNG-Transparent-Image-279x279.png&ehk=PCfc0cXYEX7gDIaODdslAXH9DIGwx5YWAlE52L9L8Jw%3d&risl=&pid=ImgRaw" alt="">
+                </div>
+
+
+                <!-- Right Column -->
+                <div class="right-column">
+
+                    <style>
+                        .right-column {
+                            width: 55%;
+                            margin-top: 30px;
+                            margin-bottom: 10px;
+                        }
+                    </style>
+
+                    <!-- Product Description -->
+                    <div class="product-description">
+                        <style>
+                            .product-description {
+                                border-bottom: 1px solid #E1E8EE;
+                                margin-bottom: 20px;
+                            }
+
+                                .product-description span {
+                                    font-size: 12px;
+                                    color: #358ED7;
+                                    letter-spacing: 1px;
+                                    text-decoration: none;
+                                }
+
+                                .product-description h1 {
+                                    font-weight: 300;
+                                    font-size: 52px;
+                                    color: #43484D;
+                                    letter-spacing: -2px;
+                                }
+
+                                .product-description p {
+                                    font-size: 16px;
+                                    font-weight: 300;
+                                    color: #86939E;
+                                    line-height: 24px;
+                                }
+                        </style>
+
+                        <span id="category" style="color:#D10024; font-size: 20px;"></span>
+                        <br />
+                        <div id="name" style="color:#D10024; font-size:50px;"></div>
+                        <input type="hidden" name="ProductId" value="" />
+                        <input type="hidden" name="ProductName" value="" />
+                        <br />
+                        <br />
+                        <p><span id="detail" style="font-size:40px;"></span> </p>
+                    </div>
+
+                    <!-- Product Configuration -->
+                    <div class="product-configuration">
+
+
+                        <!-- Cable Configuration -->
+                        <div class="cable-config">
+                            <style>
+                                /* Cable Configuration */
+                                .cable-choose {
+                                    margin-bottom: 20px;
+                                }
+
+                                    .cable-choose button {
+                                        border: 2px solid #D10024;
+                                        border-radius: 6px;
+                                        padding: 13px 20px;
+                                        font-size: 18px;
+                                        color: #5E6977;
+                                        background-color: #fff;
+                                        cursor: pointer;
+                                        transition: all .5s;
+                                    }
+
+                                        .cable-choose button:hover,
+                                        .cable-choose button:active,
+                                        .cable-choose button:focus {
+                                            border: 2px solid green;
+                                            outline: none;
+                                        }
+
+                                .cable-config {
+                                    border-bottom: 1px solid #E1E8EE;
+                                    margin-bottom: 20px;
+                                }
+
+                                    .cable-config a {
+                                        color: #358ED7;
+                                        text-decoration: none;
+                                        font-size: 12px;
+                                        position: relative;
+                                        margin: 10px 0;
+                                        display: inline-block;
+                                    }
+
+                                        .cable-config a:before {
+                                            height: 15px;
+                                            width: 15px;
+                                            border-radius: 50%;
+                                            border: 2px solid rgba(53, 142, 215, 0.5);
+                                            display: inline-block;
+                                            text-align: center;
+                                            line-height: 16px;
+                                            opacity: 0.5;
+                                            margin-right: 5px;
+                                        }
+                            </style>
+
+                            <span> Select Product Feature </span>
+
+                            <div class="cable-choose">
+                                <button id="basicprice">Basic</button>
+                                <button id="stdprice">Standard</button>
+                                <button id="entprice">Enterprise</button>
+                            </div>
+
+                            <script>
+                                $(':button').select(function () {
+                                    document.getElementById('Price').value = 'button selected';
+                                })
+                            </script>
+
+                            <input type="hidden" id="Price" name="Price" value="" />
+                        </div>
+                    </div>
+
+                    <!-- Product Pricing -->
+                    <div class="product-price">
+                        <style>
+                            /* Product Price */
+                            .product-price {
+                                display: flex;
+                                align-items: center;
+                            }
+
+                                .product-price span {
+                                    font-size: 26px;
+                                    font-weight: 300;
+                                    color: #43474D;
+                                    margin-right: 20px;
+                                }
+
+                            .cart-btn {
+                                display: inline-block;
+                                background-color: #e7483a;
+                                border-radius: 6px;
+                                font-size: 16px;
+                                color: #FFFFFF;
+                                text-decoration: none;
+                                padding: 12px 30px;
+                                transition: all .5s;
+                            }
+
+                                .cart-btn:hover {
+                                    background-color: #64af3d;
+                                }
+                        </style>
+
+                        <span id="price"></span>
+                        <a href="/Home/Index" class="cart-btn" style="float:left">Home</a>
+                        <a href="#" class="cart-btn" id="add-cart" onclick="display()" style="margin-left:10px">Add to cart</a>
+                        <input type="button" class="cart-btn" id="view-cart" style="margin-left: 10px" value="View Cart" />
+
+
+
+                    </div>
+
+                    <br /><br />
+
+                    <input type="button" class="cart-btn" id="cartMessage" style="background-color:forestgreen;color:white" value="Product Added to Cartt" />
+                </div>
+        </main>
+        <script>
+            function ready() {
+                document.getElementById('view-cart').style.display = 'none';
+                document.getElementById('cartMessage').style.display = 'none';
+            }
+            function display() {
+                document.getElementById('add-cart').style.display = 'none';
+                document.getElementById('view-cart').style.display = 'block';
+                document.getElementById('cartMessage').style.display = 'block';
+            }
+        </script>
+        <script src="~/js/prodgetstorage.js"></script>
+    </body>
+</html>

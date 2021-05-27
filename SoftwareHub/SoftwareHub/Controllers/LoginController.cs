@@ -29,13 +29,11 @@ namespace SoftwareHub.Controllers
             int res = dbop.LoginCheck(nu);
             if(res == 1)
             {
-                TempData["msg"] = "Credentials are Right";
+                /*var displayData = _db.product.ToList();
+                return View("/Views/Home/UserHome",displayData);*/
+                return RedirectToAction("UserHome","Home");
             }
-            else
-            {
-                TempData["msg"] = "Credentials are wrong";
-            }
-            return View("Home");
+            return RedirectToAction("Index", "Home");
         }
 
         public IActionResult Signup()
@@ -58,6 +56,11 @@ namespace SoftwareHub.Controllers
         public IActionResult AboutUs()
         {
             return View();
+        }
+
+        public IActionResult Logout()
+        {
+            return RedirectToAction("Index", "Home");
         }
     }
 }

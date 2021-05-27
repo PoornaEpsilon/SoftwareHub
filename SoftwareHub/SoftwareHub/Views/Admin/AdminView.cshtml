@@ -1,0 +1,103 @@
+﻿@model IEnumerable<SoftwareHub.Models.Product>
+
+@{
+    ViewData["Title"] = "AdminView";
+}
+
+<div class="row">
+    <div class="col-md-4" style="float:left">
+        <h2>Admin Home</h2>
+    </div>
+    <div class="col-md-offset-4" style="float:right">
+        <p>
+            <a asp-action="AddProduct" style="background-color:blue;color:white;" class="btn btn-block">Add Product</a>
+        </p>
+    </div>
+</div>
+
+<div class="table-responsive">
+    <div class="table">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ProductId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.ProductName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Description)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.BasicPrice)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.StandardPrice)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.EnterprisePrice)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Category)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PocName)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PocEmail)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.PocPhone)
+                    </th>
+                    <th colspan="2" style="text-align:center">
+                        Actions
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ProductId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ProductName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Description)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.BasicPrice)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.StandardPrice)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.EnterprisePrice)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Category)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PocName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PocEmail)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PocPhone)
+                        </td>
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.ProductId }, new { @class = "btn btn-primary btn-sm" })
+                        </td>
+                        <td>
+                            @Html.ActionLink("Delete", "Delete", new { id = item.ProductId }, new { @class = "btn btn-danger btn-sm" })
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
